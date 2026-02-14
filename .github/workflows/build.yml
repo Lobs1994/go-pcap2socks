@@ -34,6 +34,11 @@ jobs:
           # macOS builds
           - os: macos-latest
             goos: darwin
+            goarch: amd64
+            cgo: '1'
+            target: go-pcap2socks-darwin-amd64
+          - os: macos-latest
+            goos: darwin
             goarch: arm64
             cgo: '1'
             target: go-pcap2socks-darwin-arm64
